@@ -1,23 +1,20 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Image from "next/image"; // Don't forget to import this!
+import Image from "next/image";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
-// 1. Define your projects data here to keep the JSX clean
 const MY_PROJECTS = [
   {
     title: "Project One",
-    description:
-      "A full-stack web application focused on user experience and real-time data.",
+    description: "Team project for Movie details website.",
     tags: ["NEXT.JS", "TAILWIND", "SHADCN"],
     link: "https://project-ypxw.vercel.app/",
     image: "/project1.png",
   },
   {
     title: "Project Two",
-    description:
-      "Interactive frontend experiment exploring complex animations and 3D space.",
+    description: "Casual Coffee Shop website.",
     tags: ["NEXT.JS", "TAILWIND", "TYPESCRIPT"],
     link: "projects",
     image: "/image.png",
