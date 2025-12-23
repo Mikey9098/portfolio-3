@@ -4,10 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Mail, Send } from "lucide-react";
 import { SiDiscord, SiGithub } from "@icons-pack/react-simple-icons";
+import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="relative z-10 py-24 px-6 w-full flex flex-col items-center">
+    <div className="relative z-10 h-200 px-6 w-full flex flex-col items-center">
       <div className="max-w-4xl w-full">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold text-white tracking-tighter mb-4">
@@ -17,7 +18,6 @@ const Contact = () => {
             Let's build something amazing together.
           </p>
         </div>
-
         <div className="relative group">
           <div className="absolute -inset-0.5 bg-linear-to-r from-indigo-500 to-purple-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
 
@@ -96,6 +96,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+       
       </div>
     </div>
   );

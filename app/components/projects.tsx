@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import Link from "next/link";
 
 const MY_PROJECTS = [
   {
@@ -43,9 +44,9 @@ const Projects = () => {
   }, [mouseX, mouseY]);
 
   return (
-    <div className="bg-background w-full min-h-screen relative overflow-hidden pb-20">
-      <motion.div
-        className="pointer-events-none fixed inset-0 z-0"
+    <div className="bg-background w-full mb-20 relative overflow-hidden ">
+        <motion.div
+          className="pointer-events-none fixed inset-0 z-0"
         style={{ background }}
       />
 
