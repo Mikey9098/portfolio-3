@@ -3,13 +3,13 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 import {
   motion,
   useMotionTemplate,
   useMotionValue,
   animate,
 } from "framer-motion";
-
 const Main_menu = () => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -25,7 +25,7 @@ const Main_menu = () => {
   }, [mouseX, mouseY]);
 
   return (
-    <div className=" bg-background w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <div className=" bg-background w-full h-screen flex flex-col items-center justify-center ">
       <div className="relative z-10 flex gap-24 text-white items-center">
         <div className="flex flex-col gap-2 w-150">
           <h1 className="text-6xl font-bold tracking-tighter">
@@ -50,6 +50,46 @@ const Main_menu = () => {
             priority
           />
         </div>
+      </div>
+      <div className="pt-20 w-274 flex-col text-white text-left">
+        <h1 className="mb-3 text-5xl Text-white font-bold">My skills</h1>
+        <InfiniteSlider speedOnHover={90} gap={24}>
+          <img
+            src="/html.png"
+            alt="HTML"
+            className="aspect-square w-20 rounded-lg p-2"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS"
+            className="aspect-square w-20 rounded-lg  p-2"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            className="aspect-square w-20 rounded-lg  p-2"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React"
+            className="aspect-square w-20 rounded-lg  p-2"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            alt="Tailwind CSS"
+            className="aspect-square w-20 rounded-lg  p-2"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+            alt="Next.js"
+            className="aspect-square w-20 rounded-lg p-2 invert"
+          />
+          <img
+            src="https://ui.shadcn.com/favicon.ico"
+            alt="shadcn/ui"
+            className="aspect-square w-20 rounded-lg  p-2"
+          />
+        </InfiniteSlider>
       </div>
     </div>
   );
