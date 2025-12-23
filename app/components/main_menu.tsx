@@ -51,46 +51,6 @@ const Main_menu = () => {
           />
         </div>
       </div>
-      <div className="pt-20 w-274 flex-col text-white text-left">
-        <h1 className="mb-3 text-5xl Text-white font-bold">My skills</h1>
-        <InfiniteSlider speedOnHover={90} gap={24}>
-          <img
-            src="/html.png"
-            alt="HTML"
-            className="aspect-square w-20 rounded-lg p-2"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            alt="CSS"
-            className="aspect-square w-20 rounded-lg  p-2"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript"
-            className="aspect-square w-20 rounded-lg  p-2"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            alt="React"
-            className="aspect-square w-20 rounded-lg  p-2"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
-            alt="Tailwind CSS"
-            className="aspect-square w-20 rounded-lg  p-2"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-            alt="Next.js"
-            className="aspect-square w-20 rounded-lg p-2 invert"
-          />
-          <img
-            src="https://ui.shadcn.com/favicon.ico"
-            alt="shadcn/ui"
-            className="aspect-square w-20 rounded-lg  p-2"
-          />
-        </InfiniteSlider>
-      </div>
     </div>
   );
 };

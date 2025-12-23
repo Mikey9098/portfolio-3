@@ -3,11 +3,13 @@ import React from "react";
 import Main_menu from "./components/main_menu";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
+import Skills from "./components/skills";
 
 const page = () => {
   return (
     <>
       <Main_menu></Main_menu>
+      <Skills />
       <Projects></Projects>
       <Contact></Contact>
     </>
