@@ -25,13 +25,13 @@ const Main_menu = () => {
   }, [mouseX, mouseY]);
 
   return (
-    <div className=" bg-background w-full mt-20 flex flex-col items-center justify-center ">
-      <div className="relative z-10 flex gap-24 text-white items-center">
-        <div className="flex flex-col gap-2 w-150">
-          <h1 className="text-6xl font-bold tracking-tighter">
+    <div className="bg-background w-full mt-20 flex flex-col items-center justify-center">
+      <div className="relative z-10 flex flex-col-reverse md:flex-row gap-8 md:gap-24 text-white items-center w-full max-w-6xl px-6">
+        <div className="flex flex-col gap-2 max-w-lg md:max-w-xl">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
             Hello I'm Amartuvhsin
           </h1>
-          <p className="text-zinc-400 mt-2 text-lg">
+          <p className="text-zinc-400 mt-2 text-base md:text-lg">
             I’m a student web developer who enjoys building interactive and
             visually clean websites. I focus on frontend development, combining
             logic, motion, and design to create smooth user experiences.
@@ -46,7 +46,7 @@ const Main_menu = () => {
             alt="Portfolio Picture"
             width={400}
             height={600}
-            className="relative z-10 rounded-lg border border-white/10 shadow-2xl"
+            className="relative z-10 rounded-lg border border-white/10 shadow-2xl w-40 sm:w-64 md:w-96"
             priority
           />
         </div>

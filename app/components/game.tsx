@@ -83,13 +83,13 @@ export default function Main() {
   };
 
   return (
-    <div className="w-full mb-20 h-140 bg-background flex items-center justify-center">
+    <div className="w-full mb-20 bg-background flex items-center justify-center py-20">
       {!gameStarted ? (
-        <div className="flex flex-col items-center gap-6">
-          <h1 className="text-white text-4xl font-bold">
+        <div className="flex flex-col items-center gap-6 px-6">
+          <h1 className="text-white text-3xl md:text-4xl font-bold text-center">
             Welcome to Rock Paper Scissors!
           </h1>
-          <p className="text-white text-lg">
+          <p className="text-white text-base md:text-lg text-center">
             Choose your weapon and play against the computer.
           </p>
           <button
@@ -100,10 +100,13 @@ export default function Main() {
           </button>
         </div>
       ) : (
-        <div ref={gameSectionRef} className="flex flex-col items-center gap-6">
+        <div
+          ref={gameSectionRef}
+          className="flex flex-col items-center gap-6 px-6"
+        >
           <div
             ref={scoreRef}
-            className="flex gap-10 text-white text-2xl font-bold"
+            className="flex flex-wrap gap-6 justify-center text-white text-2xl font-bold"
           >
             <p>You: {playerScore}</p>
             <p>Computer: {computerScore}</p>
@@ -112,7 +115,7 @@ export default function Main() {
 
           <h2 className="text-white text-3xl font-bold">Choose your move:</h2>
 
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             {(["Rock", "Paper", "Scissors"] as Choice[]).map((c) => (
               <button
                 key={c}

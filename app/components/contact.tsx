@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="relative z-10 h-200 px-6 w-full flex flex-col items-center">
+    <div className="relative z-10 px-6 w-full flex flex-col items-center py-20">
       <div className="max-w-4xl w-full">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold text-white tracking-tighter mb-4">
@@ -96,7 +96,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </div>
   );
