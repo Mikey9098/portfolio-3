@@ -25,7 +25,7 @@ const Main_menu = () => {
   }, [mouseX, mouseY]);
 
   return (
-    <div className=" bg-background w-full h-screen flex flex-col items-center justify-center ">
+    <div className=" bg-background w-full mt-20 flex flex-col items-center justify-center ">
       <div className="relative z-10 flex gap-24 text-white items-center">
         <div className="flex flex-col gap-2 w-150">
           <h1 className="text-6xl font-bold tracking-tighter">

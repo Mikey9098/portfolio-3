@@ -83,7 +83,7 @@ export default function Main() {
   };
 
   return (
-    <div className="w-full mb-20 bg-background flex items-center justify-center">
+    <div className="w-full mb-20 h-140 bg-background flex items-center justify-center">
       {!gameStarted ? (
         <div className="flex flex-col items-center gap-6">
           <h1 className="text-white text-4xl font-bold">
