@@ -9,7 +9,7 @@ const MY_PROJECTS = [
   {
     title: "Project One",
     description: "Team project for Movie details website.",
-    tags: ["NEXT.JS", "TAILWIND", "SHADCN"],
+    tags: ["NEXT.JS", "TAILWIND", "SHADCN", "TYPESCRIPT"],
     link: "https://project-ypxw.vercel.app/",
     image: "/project1.png",
   },
@@ -19,6 +19,13 @@ const MY_PROJECTS = [
     tags: ["NEXT.JS", "TAILWIND", "TYPESCRIPT"],
     link: "projects",
     image: "/image.png",
+  },
+  {
+    title: "Project Three",
+    description: "Another team project about game details and etc",
+    tags: ["NEXT.JS", "TAILWIND", "TYPESCRIPT", "SHADCN", "SUPABASE"],
+    link: "https://team-project-eta-three.vercel.app/",
+    image: "/Team_project.png",
   },
 ];
 
@@ -45,8 +52,8 @@ const Projects = () => {
 
   return (
     <div className="bg-background w-full mb-20 relative overflow-hidden ">
-        <motion.div
-          className="pointer-events-none fixed inset-0 z-0"
+      <motion.div
+        className="pointer-events-none fixed inset-0 z-0"
         style={{ background }}
       />
 
